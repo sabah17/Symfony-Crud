@@ -1,0 +1,14 @@
+<?php
+// src/Acme/UserBundle/AcmeUserBundle.php
+
+namespace Acme\UserBundle;
+
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class AcmeUserBundle extends Bundle
+{
+    public function getParent()
+    {
+        return 'FOSUserBundle';
+    }
+}

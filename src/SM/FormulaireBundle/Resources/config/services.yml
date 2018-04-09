@@ -1,0 +1,6 @@
+services:
+     kernel.listener.doctrine:
+         class: SM\FormulaireBundle\Listener\DoctrineListener
+         public: false
+         tags:
+             - { name: doctrine.event_listener, event: preFlush, method: preFlush }
